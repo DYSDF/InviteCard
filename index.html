@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我们结婚啦~</title>
+
+    <link rel="stylesheet" href="http://cdn.staticfile.org/Swiper/3.2.7/css/swiper.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+<body>
+
+<div class="app-header">
+    <div id="load-mask">
+        <img class="heart-shadow" src="static/img/heart.png" alt="">
+        <img class="heart" src="static/img/heart.png" alt="">
+    </div>
+</div>
+
+<div class="app-body swiper-container">
+    <div class="swiper-wrapper">
+        <div id="page-01" class="swiper-slide page animate">
+            <img id="bridegroom" src="static/img/bridegroom.png" alt="">
+            <img id="bride" src="static/img/bride.png" alt="">
+        </div>
+        <div id="page-02" class="swiper-slide page">
+            <img id="heart-shadow" src="static/img/heart.png" alt="">
+            <img id="heart" src="static/img/heart.png" alt="">
+            <div id="invite-content" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>新婚邀约</p>
+                        <p class="text-black">2016-10-03</p>
+                        <p class="text-black">江苏省宝应县望直港镇</p>
+                        <p>呈送</p>
+                        <p>新郎：<span class="text-black">王杰</span></p>
+                        <p>新娘：<span class="text-black">高庆纹</span></p>
+                        <p>在这温馨浪漫、喜悦甜蜜的日子里<br/>我俩决定于2016-10-03举行结婚典礼</p>
+                        <p>届时敬备酒宴，欢迎您到来分享这份喜悦<br/>您的光临将使我们的婚宴增添万分光彩！</p>
+                        <h3>现在还有</h3>
+                        <p id="count-down-timeBox" class="text-black">0天0时0分0秒</p>
+                        <p>我们即将结婚！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page-03" class="swiper-slide page">
+            <div id="photo-gallery" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="photo">
+                            <img src="static/img/gallery/01.jpg" alt="" class="swiper-lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="photo">
+                            <img src="static/img/gallery/02.jpg" alt="" class="swiper-lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="photo">
+                            <img src="static/img/gallery/03.jpg" alt="" class="swiper-lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page-04" class="swiper-slide page">
+            <div id="map-box">
+                <div class="map-btn">
+                    <a href="javascript:;" onclick="$('#map-box').removeClass('show')">关闭</a>
+                </div>
+                <div id="bd-map"></div>
+            </div>
+            <a href="javascript:;" class="addressBtn" onclick="$('#map-box').addClass('show')"></a>
+        </div>
+        <div id="page-05" class="swiper-slide page">
+            <div id="comments-box" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div id="comments" class="swiper-slide"></div>
+                </div>
+                <div id="comments-scrollbar" class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 如果需要导航按钮 -->
+    <div class="button-next"></div>
+</div>
+
+<div class="app-footer">
+    <div id="music-box">
+        <audio src="http://m2.music.126.net/kfGvPe7fA0WotDPlI0seXA==/6661940952771878.mp3"></audio>
+    </div>
+</div>
+
+<script type="text/javascript" src="http://cdn.staticfile.org/jquery/2.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdn.staticfile.org/Swiper/3.2.7/js/swiper.jquery.min.js"></script>
+
+<script type="text/javascript" src="http://cdn.staticfile.org/react/0.14.3/react.min.js"></script>
+<script type="text/javascript" src="http://cdn.staticfile.org/react/0.14.3/react-dom.min.js"></script>
+<script type="text/javascript" src="static/lib/browser.min.js"></script>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=5f8899061d1b1e564fc123a6a05aba03"></script>
+
+<script type="text/babel" src="static/js/JSX.js"></script>
+<script type="text/javascript" src="static/js/script.js"></script>
+</body>
+</html>
